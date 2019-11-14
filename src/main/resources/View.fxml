@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.alasdiablo.mcextrator.controler.Controler">
+   <children>
+      <VBox prefHeight="48.0" prefWidth="408.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="360.0" text="Minecraft Folder" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets left="24.0" right="24.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="intput" prefHeight="26.0" prefWidth="360.0">
+               <VBox.margin>
+                  <Insets left="24.0" right="24.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets top="6.0" />
+         </VBox.margin>
+      </VBox>
+      <VBox prefHeight="48.0" prefWidth="408.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="360.0" text="Output Folder" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets left="24.0" right="24.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="output" prefHeight="26.0" prefWidth="360.0">
+               <VBox.margin>
+                  <Insets left="24.0" right="24.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets top="6.0" />
+         </VBox.margin>
+      </VBox>
+      <VBox prefWidth="408.0">
+         <children>
+            <ChoiceBox fx:id="VERSION" maxWidth="1.7976931348623157E308" prefHeight="24.0" prefWidth="150.0">
+               <VBox.margin>
+                  <Insets left="24.0" right="24.0" />
+               </VBox.margin>
+            </ChoiceBox>
+         </children>
+         <VBox.margin>
+            <Insets top="6.0" />
+         </VBox.margin>
+      </VBox>
+      <VBox maxHeight="1.7976931348623157E308" prefWidth="100.0">
+         <children>
+            <Button fx:id="start" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="26.0" text="Process">
+               <VBox.margin>
+                  <Insets left="24.0" right="24.0" />
+               </VBox.margin>
+            </Button>
+            <ProgressBar fx:id="load" maxWidth="1.7976931348623157E308" prefHeight="26.0" progress="0.0">
+               <VBox.margin>
+                  <Insets bottom="6.0" left="24.0" right="24.0" top="6.0" />
+               </VBox.margin>
+            </ProgressBar>
+            <TextArea fx:id="logger" editable="false" maxHeight="1.7976931348623157E308" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets left="24.0" right="24.0" />
+               </VBox.margin>
+            </TextArea>
+         </children>
+         <VBox.margin>
+            <Insets bottom="12.0" top="6.0" />
+         </VBox.margin>
+      </VBox>
+   </children>
+</VBox>
